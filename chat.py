@@ -1,5 +1,5 @@
 from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
+# from chatterbot.trainers import ListTrainer
 # from googletrans import Translator
 # import chatterbot
 # from chatterbot.comparisons import LevenshteinDistance
@@ -22,13 +22,13 @@ jarvis = ChatBot(
 )
 
 
-def Train():
-    input_file = open('./data_train_jarvis.txt', "r")  
-    data_talk = input_file.readlines()
-    # print(data_talk)
-    list_trainer = ListTrainer(jarvis)
-    list_trainer.train(data_talk)
-    input_file.close()
+# def Train():
+#     input_file = open('./data_train_jarvis.txt', "r")  
+#     data_talk = input_file.readlines()
+#     # print(data_talk)
+#     list_trainer = ListTrainer(jarvis)
+#     list_trainer.train(data_talk)
+#     input_file.close()
                                 
 
 
@@ -63,6 +63,6 @@ def InputChat(message):
 #         Chat()
 
 # Start()
-Train()
+# Train()
 # print(jarvis.get_response("who are you?"))
 # print(translator.translate("xin chào.", src='vi', dest='en'))
